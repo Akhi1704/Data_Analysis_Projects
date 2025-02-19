@@ -2,29 +2,30 @@
 
 - **Nashville_Housing**
   - `Nashville_Housing.ipynb`: Jupyter Notebook containing the data analysis and visualizations for the Nashville housing dataset.
-  - `data/`: Directory containing the dataset files for the Nashville housing project.
-  - `images/`: Directory containing saved plot images for the Nashville housing project.
+  - `Nashville Housing Data for Data Cleaning.xlsx` : The raw dataset which is used for data cleaning in SQL.
+  - `Nashville Housing Data_Cleaned.csv` : The csv file consisting the cleaned dataset from SQL used for visualizations in python.
+  - `plot_images/`: Directory containing saved plot images for the Nashville housing project.
   - `README.md`: Project-specific README file for the Nashville housing analysis.
 
 #### Visualizations
 
 1. **Distribution of Sale Prices**
-   ![Distribution of Sale Prices](Nashville_Housing/images/sale_price_distribution.png)
+   ![Distribution of Sale Prices](Nashville_Housing/plot_images/sale_price_distribution.png)
 
 2. **Number of Property Sales by Year**
-   ![Number of Property Sales by Year](Nashville_Housing/images/sales_by_year.png)
+   ![Number of Property Sales by Year](Nashville_Housing/plot_images/sales_by_year.png)
 
 3. **Sale Prices by Property Type**
-   ![Sale Prices by Property Type](Nashville_Housing/images/sale_prices_by_property_type.png)
+   ![Sale Prices by Property Type](Nashville_Housing/plot_images/sale_prices_by_property_type.png)
 
 4. **Sale Price vs. Property Size**
-   ![Sale Price vs. Property Size](Nashville_Housing/images/sale_price_vs_property_size.png)
+   ![Sale Price vs. Property Size](Nashville_Housing/plot_images/sale_price_vs_property_size.png)
 
 5. **Correlation Matrix**
-   ![Correlation Matrix](Nashville_Housing/images/correlation_matrix.png)
+   ![Correlation Matrix](Nashville_Housing/plot_images/correlation_matrix.png)
 
 6. **Sales by Property Type**
-   ![Sales by Property Type](Nashville_Housing/images/sales_by_property_type.png)
+   ![Sales by Property Type](Nashville_Housing/plot_images/sales_by_property_type.png)
 
 #### Analysis Summary
 
@@ -67,8 +68,6 @@ The `nashville_housing.sql` file contains SQL scripts used to clean the raw data
 - Standardizing date formats
 - Breaking out addresses into individual columns (Address, City, State)
 - Changing 'Y' and 'N' to 'Yes' and 'No' in the SoldAsVacant column
-
-The cleaned datasets are stored in the `cleaned_data/` directory.
 
 
 ## License
