@@ -2,4 +2,7 @@
 \# filter=lfs diff=lfs merge=lfs -text
 example filter=lfs diff=lfs merge=lfs -text
 extension filter=lfs diff=lfs merge=lfs -text
+Stree[[:space:]]Shakti/data/processed/*.csv filter=lfs diff=lfs merge=lfs -text
+Stree[[:space:]]Shakti/data/synthetic/*.csv filter=lfs diff=lfs merge=lfs -text
+Stree[[:space:]]Shakti/data/cleaned/*.csv filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
