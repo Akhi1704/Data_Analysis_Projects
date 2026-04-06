@@ -1,0 +1,104 @@
+{
+  "generation_date": "2026-01-21T11:02:17.133648",
+  "total_records": 1000000,
+  "date_range": {
+    "start": "2025-08-15",
+    "end": "2025-12-31"
+  },
+  "parameters_used": {
+    "n_records": 1000000,
+    "start_date": "2025-08-15",
+    "end_date": "2025-12-31",
+    "female_percentage": 0.65,
+    "stree_shakti_pct": 0.6,
+    "total_buses": 8458,
+    "peak_hours": [
+      7,
+      8,
+      9,
+      10,
+      17,
+      18,
+      19
+    ],
+    "off_peak_hours": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      20,
+      21
+    ],
+    "peak_occupancy_range": [
+      90,
+      100
+    ],
+    "off_peak_occupancy_range": [
+      45,
+      70
+    ],
+    "route_distribution": {
+      "urban": {
+        "weight": 0.5,
+        "mean_distance": 10,
+        "std_distance": 5
+      },
+      "peri-urban": {
+        "weight": 0.35,
+        "mean_distance": 18,
+        "std_distance": 8
+      },
+      "rural": {
+        "weight": 0.15,
+        "mean_distance": 25,
+        "std_distance": 12
+      }
+    },
+    "fare_structure": {
+      "urban_short": 20,
+      "urban_medium": 30,
+      "urban_long": 40,
+      "rural_short": 15,
+      "rural_long": 35
+    }
+  },
+  "validation_results": {
+    "female_percentage": {
+      "actual": 65.1,
+      "target": 65.0,
+      "status": "PASS"
+    },
+    "stree_shakti_percentage": {
+      "actual": 60.0,
+      "target": 60.0,
+      "status": "PASS"
+    },
+    "urban_routes": {
+      "actual": 50.0,
+      "target": 50.0,
+      "status": "PASS"
+    },
+    "peri-urban_routes": {
+      "actual": 35.0,
+      "target": 35.0,
+      "status": "PASS"
+    },
+    "rural_routes": {
+      "actual": 15.0,
+      "target": 15.0,
+      "status": "PASS"
+    },
+    "peak_hour_occupancy": {
+      "actual": 94.7,
+      "target": "90-100%",
+      "status": "PASS"
+    },
+    "off_peak_occupancy": {
+      "actual": 57.5,
+      "target": "45-70%",
+      "status": "PASS"
+    }
+  }
+}
