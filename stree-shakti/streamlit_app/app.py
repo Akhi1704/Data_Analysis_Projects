@@ -15,6 +15,12 @@ import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 import numpy as np
+import os
+
+# Build an absolute path to trips.csv that works both locally AND on
+# Streamlit Cloud. __file__ is always the location of app.py itself,
+# so this path resolves correctly regardless of the working directory.
+DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "trips.csv")
 
 # ── PAGE CONFIG (must be first Streamlit call) ───────────────────────
 st.set_page_config(
@@ -264,7 +270,7 @@ CFG = {"displayModeBar": False}   # Hide plotly toolbar on all charts
 # ═══════════════════════════════════════════════════════════════════════
 @st.cache_data(show_spinner="📊  Loading 472,470 trip records…")
 def load():
-    df = pd.read_csv("data/trips.csv")
+    df = pd.read_csv(DATA_PATH)
     df["date"] = pd.to_datetime(df["date"], dayfirst=True, errors="coerce")
     df["month_label"] = df["date"].dt.strftime("%b %Y")
     mo = ["Aug 2025","Sep 2025","Oct 2025","Nov 2025","Dec 2025"]
